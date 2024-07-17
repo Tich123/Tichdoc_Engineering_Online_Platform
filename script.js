@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Career Opportunities:</h4>
                 <p>Graduates of Power Machines N6 can pursue careers as electrical engineers, power system engineers, maintenance engineers, and consultants in various industries including manufacturing, utilities, and renewable energy sectors.</p>
             `,
-            videoUrl: 'https://youtu.be/m8NBXsjEZT4',
+            videoUrl: 'https://www.youtube.com/watch?v=pMQfEgCidFI',
             quiz: {
-                question: 'What is 2 + 2?',
-                options: ['3', '4', '5'],
-                answer: '4'
+                question: 'What is the primary function of an air compressor in industrial applications?',
+                options: ['The primary function of an air compressor in industrial applications is to convert power into potential energy stored in pressurized air, which is used to power pneumatic tools and machinery.', ' Uses a piston driven by a crankshaft for compression.', '[200~An intercooler in a multi-stage air compressor cools the air between compression stages to improve efficiency and reduce temperature-related issues.'],
+                answer: 'The primary function of an air compressor in industrial applications is to convert power into potential energy stored in pressurized air, which is used to power pneumatic tools and machinery.'
             }
         },
         {
