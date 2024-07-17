@@ -1,0 +1,12 @@
+{
+  "name": "tichdoc_engineering_online_platform",
+  "version": "1.0.0",
+  "description": "An online learning web app for engineering students who are doing N6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
