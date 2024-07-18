@@ -57,9 +57,6 @@ The JavaScript file containing all the dynamic functionalities of the applicatio
 4. **Take Quizzes**: Attempt the quiz to test your understanding of the course material.
 5. **Authentication**: Use the login and register functionalities to create an account or log in.
 
-## Contact
-
-If you have any questions or feedback, please contact us at [info@tichdoc.com](mailto:info@tichdoc.com).
 
 ---
 
