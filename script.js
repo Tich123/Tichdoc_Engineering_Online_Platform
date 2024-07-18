@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const courses = [
         {
@@ -90,110 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>Career Opportunities:</h4>
                 <p>Graduates of Power Machines N6 can pursue careers as electrical engineers, power system engineers, maintenance engineers, and consultants in various industries including manufacturing, utilities, and renewable energy sectors.</p>
             `,
-            videoUrl: 'https://drive.google.com/file/d/1KWVo6RF9avrp1QWXzonS3S3JfR5AjgVd/view?usp=sharing',
+            videoId: '1KWVo6RF9avrp1QWXzonS3S3JfR5AjgVd',
             quiz: {
-                question: 'What is the primary function of an air compressor in industrial applications?',
-                options: ['The primary function of an air compressor in industrial applications is to convert power into potential energy stored in pressurized air, which is used to power pneumatic tools and machinery.', ' Uses a piston driven by a crankshaft for compression.', '[200~An intercooler in a multi-stage air compressor cools the air between compression stages to improve efficiency and reduce temperature-related issues.'],
-                answer: 'The primary function of an air compressor in industrial applications is to convert power into potential energy stored in pressurized air, which is used to power pneumatic tools and machinery.'
-            }
-        },
-        {
-            id: 2,
-            title: 'Mechanical Drawing and Design N6',
-            description: `
-                <h4>Course Overview:</h4>
-                <p>Mechanical Drawing and Design N6 is an advanced course aimed at students pursuing a career in mechanical engineering or related fields. This course equips students with advanced skills and knowledge in mechanical drawing, computer-aided design (CAD), and the principles of mechanical design. It emphasizes precision, creativity, and technical expertise required for designing and interpreting complex mechanical systems and components.</p>
-                
-                <h4>Course Objectives:</h4>
-                <ul>
-                    <li>To master the principles and techniques of mechanical drawing and design.</li>
-                    <li>To develop proficiency in using CAD software for creating detailed mechanical drawings and models.</li>
-                    <li>To understand the principles of mechanical design and apply them to real-world engineering problems.</li>
-                    <li>To enhance problem-solving and critical-thinking skills in the context of mechanical engineering design.</li>
-                    <li>To prepare students for professional practice in the field of mechanical engineering.</li>
-                </ul>
-                
-                <h4>Course Content:</h4>
-                <ul>
-                    <li><strong>Advanced Mechanical Drawing:</strong>
-                        <ul>
-                            <li>Orthographic projection</li>
-                            <li>Sectional views and auxiliary views</li>
-                            <li>Dimensioning and tolerancing</li>
-                            <li>Detail and assembly drawings</li>
-                        </ul>
-                    </li>
-                    <li><strong>Computer-Aided Design (CAD):</strong>
-                        <ul>
-                            <li>Introduction to CAD software (e.g., AutoCAD, SolidWorks)</li>
-                            <li>Creating 2D drawings and 3D models</li>
-                            <li>Parametric modeling and design</li>
-                            <li>Simulation and analysis using CAD tools</li>
-                        </ul>
-                    </li>
-                    <li><strong>Mechanical Design Principles:</strong>
-                        <ul>
-                            <li>Fundamentals of mechanical design</li>
-                            <li>Material selection and properties</li>
-                            <li>Stress analysis and design for strength</li>
-                            <li>Kinematics and dynamics of machinery</li>
-                        </ul>
-                    </li>
-                    <li><strong>Design of Mechanical Components:</strong>
-                        <ul>
-                            <li>Gears, bearings, and shafts</li>
-                            <li>Fasteners and joints</li>
-                            <li>Springs and dampers</li>
-                            <li>Hydraulic and pneumatic systems</li>
-                        </ul>
-                    </li>
-                    <li><strong>Technical Specifications and Standards:</strong>
-                        <ul>
-                            <li>Engineering standards and codes</li>
-                            <li>Technical specifications and documentation</li>
-                            <li>Quality control and assurance</li>
-                        </ul>
-                    </li>
-                    <li><strong>Project Management in Mechanical Design:</strong>
-                        <ul>
-                            <li>Design project planning and execution</li>
-                            <li>Team collaboration and communication</li>
-                            <li>Cost estimation and budgeting</li>
-                            <li>Risk management and mitigation</li>
-                        </ul>
-                    </li>
-                    <li><strong>Emerging Trends in Mechanical Design:</strong>
-                        <ul>
-                            <li>Additive manufacturing and 3D printing</li>
-                            <li>Sustainable and green design</li>
-                            <li>Robotics and automation</li>
-                            <li>Integration of IoT in mechanical systems</li>
-                        </ul>
-                    </li>
-                </ul>
-                
-                <h4>Assessment Methods:</h4>
-                <ul>
-                    <li>Written examinations</li>
-                    <li>Practical CAD assignments and projects</li>
-                    <li>Design projects and presentations</li>
-                    <li>Participation in class discussions and activities</li>
-                </ul>
-                
-                <h4>Prerequisites:</h4>
-                <ul>
-                    <li>Successful completion of Mechanical Drawing and Design N5 or equivalent</li>
-                    <li>Basic knowledge of mechanical engineering principles and CAD software</li>
-                </ul>
-                
-                <h4>Career Opportunities:</h4>
-                <p>Graduates of Mechanical Drawing and Design N6 can pursue careers as mechanical designers, CAD technicians, design engineers, and project managers in industries such as automotive, aerospace, manufacturing, and robotics.</p>
-            `,
-            videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-            quiz: {
-                question: 'What is the capital of France?',
-                options: ['Berlin', 'London', 'Paris'],
-                answer: 'Paris'
+                question: '1. State two advantages of a multi stage compressor over a single stage compressor ?',
+                options: ['Higher Efficiency & Increased Pressure Ratio', 'Lower Maintenance Costs & Lower Initial Cost', 'Simpler Operation & Suitable for Low Pressure Applications'],
+                answer: 'Higher Efficiency & Increased Pressure Ratio'
             }
         },
         // Add more courses as needed
@@ -269,10 +169,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.viewCourse = function (courseId) {
         const course = courses.find(c => c.id === courseId);
         if (course) {
+            const videoUrl = `https://drive.google.com/file/d/${course.videoId}/preview`;
             courseDetailContent.innerHTML = `
                 <h3>${course.title}</h3>
                 <div>${course.description}</div>
-                <iframe width="560" height="315" src="${course.videoUrl}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>
                 <h4>Quiz</h4>
                 <p>${course.quiz.question}</p>
                 <ul>
